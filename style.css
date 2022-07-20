@@ -1,0 +1,369 @@
+@import url("https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@600&family=Pacifico&family=Permanent+Marker&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Kaushan Script', cursive;
+}
+
+nav ul li a {
+  padding: .5em 1em .5em 1em;
+  margin-right: 1vmax;
+  color: white;
+  font-size: 2.5vmin;
+  text-decoration: none;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+nav ul li a:hover,
+.active {
+  background-color: orange;
+  border-radius: .4em;
+  transition: all .5s ease;
+  color: brown;
+}
+
+.active {
+  color: brown;
+}
+
+label.check {
+  font-size: 25px;
+  color: white;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+@media(max-width: 912px) {
+
+  label.check {
+    display: block;
+    margin-right: 1em;
+  }
+
+  nav ul {
+    position: fixed;
+    background-color: #a52a2ae6;
+    top: 60px;
+    left: -100%;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: all 0.3s ease;
+  }
+
+  nav ul li {
+    margin: 40px 0;
+    display: block;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+
+  }
+
+  nav ul li a:hover,
+  .active {
+    color: orange;
+    background: none;
+
+  }
+
+  #click:checked~ul {
+    left: 0;
+  }
+
+  #click:checked~.check i:before {
+    content: "\f00d";
+  }
+}
+
+.background {
+  height: calc(100vh - 70px);
+  background-image: linear-gradient(rgb(165 42 42 / 10%), rgb(165 42 42/ 80%)), url("https://images.alphacoders.com/519/thumb-1920-519509.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.background button {
+  margin-top: 1rem;
+  height: 50px;
+  width: 30%;
+  font-size: 20px;
+  background: none;
+  color: white;
+  border: dotted white 4px;
+}
+
+.background button:hover {
+  background-color: orange;
+  color: brown;
+  border: dotted brown 4px;
+  transition: all .3s ease;
+}
+
+
+@media(max-width: 840px) {
+  .background p {
+    text-align: center;
+  }
+
+  .background button {
+    height: 16vmin;
+    width: 80vmin;
+    align-items: center;
+    margin-right: .75rem;
+    margin-top: 6vmax;
+  }
+}
+
+.box ul .item1,.item2,.item3,.item4 {
+  padding-top: 80px;
+}
+
+.box ul li{
+  height: 15vmax;
+  flex: 1 1 220px;
+  text-align: center;
+  margin: 10px 10px 0 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 917px) {
+  .box ul li {
+    height: 15vmax;
+    flex: 1 1 320px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+
+  }
+
+}
+
+@media(max-width: 540px) {
+  .box ul li {
+    height: 25vmax;
+    flex: 1 1 200px;
+    text-align: center;
+    margin: 10px 10px 0 0;
+
+  }
+
+}
+
+.box ul li p {
+  background-color: white;
+  padding: 5px;
+  font-size: 1.1rem;
+  font-weight: bold;
+
+}
+
+.box input{
+
+  background-color: brown;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  width: 53%;
+}
+
+.box input:hover {
+  background-color: orangered;
+  color: white;
+  font-size: 1.3rem;
+  border: none;
+  width: 53%;
+}
+
+
+
+.item1 {
+  background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/u2vx-hero.jpg?width=2000&height=500&quality=45");
+
+}
+
+.item2 {
+  background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/pwqe-hero.jpg?width=2000&height=500&quality=45");
+
+}
+
+.item3 {
+  background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/u9db-hero.jpg?width=1000&height=250&quality=45");
+
+}
+
+.item4 {
+  background-image: url("https://images.deliveryhero.io/image/fd-pk/LH/miv7-hero.jpg?width=2000&height=500&quality=45");
+}
+
+.heading_main{
+  text-align: center; color:brown; font-size: 3vmax;
+}
+
+.heading_main span{
+  color:orange;
+}
+
+.images{
+  list-style:none;
+  display:flex; align-items:center;
+  justify-content:center;
+}
+
+.images li{
+margin: 2vmax; 
+}
+
+
+.images img{
+  height: 25vmin; width: 25vmin; 
+  border-radius: 100px; border: solid 5px white;
+  outline:solid 5px brown;
+}
+
+.images h2{
+   color: brown;
+  text-align:center;
+  margin-top:10px;
+}
+
+
+@media(max-width: 912px) {
+  .images{
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    
+  }
+  .images img{
+    margin-top: 20px;
+    height: 15vmax; width: 15vmax;
+    
+  }
+
+
+}
+
+.gallery{
+  text-align: center; 
+  justify-content: center;
+}
+
+.gallery li img{
+  height: 20vmax; width: 20vmax; margin: 10px;
+  border: solid 7px white; outline: solid 5px brown;
+}
+
+.gallery li:hover{
+  
+  cursor: pointer; 
+}
+
+.review{
+  text-align: center; 
+justify-content: center;
+}
+
+.review li{
+height: 20vmax; width: 20vmax; margin: 20px;
+border: solid 7px white; outline: solid 5px brown; background-color: brown; color:white; font-size: 2vmin;
+}
+
+.circle img{
+  border-radius: 50%; border: solid white 1vmin; outline: solid orange 1vmin; height: 5vmax; width: 5vmax; margin: 1.5vmax 0 1.5vmax 0;
+}
+
+.order_menu input {
+  width: 20vmax;
+  height: 3vmax;
+  margin: 7px;
+  border-radius: 5px;
+  border: solid orange 1vmin;
+  padding-left: 2px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.box {
+  background-color: #a52a2ae6;
+  margin: 1vmax;
+}
+
+.container{
+  display: flex; flex-wrap: wrap;  padding-bottom: 10px; padding-right: 10px; text-align: center;
+}
+
+.container .video{
+height: 14rem;
+flex: 1 1 220px;
+overflow: hidden;
+}
+
+iframe{  
+margin: 10px 10px; 
+object-fit: cover;
+outline: none;
+border: none;
+}
+
+.foot{
+  border-right: solid orange 5px;
+  padding-right: 10px; 
+}
+.fa-brands{
+  padding-top: 1vmax;
+  font-size: 2vmax;
+  color: white; margin: 10px;
+}
+#icon:hover{
+  color:orange;
+  transition: all .5s ease;
+}
+#qrcode{
+  padding-top: 1vmax;
+  font-size: 10vmax;
+  color: white;
+}
+#email{
+  
+  width: 70%; 
+  height: 5.3vh; border: none;
+  border-bottom: solid orange 5px; 
+  font-size: 1.3vmax; border-radius: 3px;
+  color: brown; background-color: white;
+  padding-left: 5px;
+}
