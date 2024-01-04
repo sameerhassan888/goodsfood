@@ -263,7 +263,7 @@ margin: 2vmax;
 }
 
 .gallery li img{
-  height: 20vmax; width: 20vmax; margin: 10px;
+  height: 20vmax; width: 20vmax; margin: 10px; object-fit:cover;
   border: solid 7px white; outline: solid 5px brown;
 }
 
