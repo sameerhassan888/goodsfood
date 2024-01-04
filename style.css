@@ -88,7 +88,7 @@ label.check {
 
 .background {
   height: calc(100vh - 70px);
-  background-image: linear-gradient(rgb(165 42 42 / 10%), rgb(165 42 42/ 80%)), url("https://images.alphacoders.com/519/thumb-1920-519509.jpg");
+  background-image: linear-gradient(rgb(165 42 42 / 10%), rgb(165 42 42/ 80%)), url("https://res.cloudinary.com/debltnmge/image/upload/v1704369965/14.thumb-1920-519509_fonlhp.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
